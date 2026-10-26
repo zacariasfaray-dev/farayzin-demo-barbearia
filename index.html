@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fade &amp; Blade Barbershop — demo site</title>
+<meta name="description" content="Fictional barbershop landing page — responsive demo in vanilla HTML/CSS/JS, built and published by JARVIS WEB MASTER AI as an exercise.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head" id="top">
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="#top">💈 <strong>Fade&nbsp;&amp;&nbsp;Blade</strong></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menu ☰</button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#booking">Booking</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <p class="kicker">Demo site · fictional shop, Springfield USA</p>
+  <h1>Sharp fades. Straight razors. Real talk.</h1>
+  <p class="lead">Classic barbershop service with a modern edge. Walk-ins welcome, appointments preferred — the chair is always warm.</p>
+  <div class="cta-row">
+    <a class="btn" href="#booking">Book an appointment</a>
+    <a class="btn ghost" href="tel:+15550101000">Call (555) 010-1000</a>
+  </div>
+  <ul class="badges">
+    <li>Open Tue–Sat</li>
+    <li>Walk-ins welcome</li>
+    <li>Hot towel included</li>
+  </ul>
+</section>
+
+<section id="services" class="section">
+  <h2>Services &amp; prices</h2>
+  <div class="cards">
+    <article class="card"><h3>Haircut</h3><p class="price">$25</p><p>Consultation, cut and style, finished product check.</p></article>
+    <article class="card"><h3>Skin fade</h3><p class="price">$30</p><p>Full fade with precision line-up and styling.</p></article>
+    <article class="card"><h3>Beard trim</h3><p class="price">$15</p><p>Shape, razor line-up and conditioning oil.</p></article>
+    <article class="card"><h3>Hot towel shave</h3><p class="price">$20</p><p>Straight razor, warm towels, aftershave balm.</p></article>
+    <article class="card"><h3>Kids cut</h3><p class="price">$18</p><p>Under 12, patient chairs, cartoon on the screen.</p></article>
+    <article class="card"><h3>Cut + beard combo</h3><p class="price">$40</p><p>The full reset, top and bottom.</p></article>
+  </div>
+</section>
+
+<section id="booking" class="section alt">
+  <h2>Book a chair</h2>
+  <form id="book-form" novalidate>
+    <label>Name
+      <input name="name" type="text" required autocomplete="name" placeholder="Your name">
+    </label>
+    <label>Phone
+      <input name="phone" type="tel" required autocomplete="tel" placeholder="(555) 000-0000">
+    </label>
+    <label>Service
+      <select name="service">
+        <option value="Haircut">Haircut — $25</option>
+        <option value="Skin fade" selected>Skin fade — $30</option>
+        <option value="Beard trim">Beard trim — $15</option>
+        <option value="Hot towel shave">Hot towel shave — $20</option>
+        <option value="Kids cut">Kids cut — $18</option>
+        <option value="Cut + beard combo">Cut + beard combo — $40</option>
+      </select>
+    </label>
+    <label>Preferred date
+      <input name="date" type="date" required>
+    </label>
+    <label>Notes
+      <textarea name="notes" rows="3" placeholder="Anything the barber should know"></textarea>
+    </label>
+    <button class="btn" type="submit">Request appointment</button>
+    <p class="note" id="form-note" role="status" aria-live="polite"></p>
+    <div id="draft-bookings" aria-live="polite"></div>
+  </form>
+  <p class="fine">Demo notice: this form does not send anything anywhere. Requests stay in your browser only.</p>
+</section>
+
+<section id="gallery" class="section">
+  <h2>Inside the shop</h2>
+  <div class="tiles">
+    <div class="tile t1"><span>✂️</span><p>Barber chairs</p></div>
+    <div class="tile t2"><span>💈</span><p>The pole</p></div>
+    <div class="tile t3"><span>🪞</span><p>Wall of mirrors</p></div>
+    <div class="tile t4"><span>🧴</span><p>Product shelf</p></div>
+    <div class="tile t5"><span>☕</span><p>Coffee corner</p></div>
+    <div class="tile t6"><span>🎞️</span><p>Golden-age posters</p></div>
+  </div>
+  <p class="fine">Gallery placeholders for the demo — no image assets shipped, the page stays light.</p>
+</section>
+
+<section id="reviews" class="section alt">
+  <h2>Reviews</h2>
+  <div class="quotes">
+    <figure><blockquote>“Best fade I've had in five years. Hands like a surgeon.”</blockquote><figcaption>— Marcus D.</figcaption></figure>
+    <figure><blockquote>“In and out in thirty minutes, beard sharper than my suits.”</blockquote><figcaption>— Tyler R.</figcaption></figure>
+    <figure><blockquote>“They take their time with my son and he actually looks forward to haircuts.”</blockquote><figcaption>— Priya S.</figcaption></figure>
+  </div>
+  <p class="fine">Reviews are fictional demo content.</p>
+</section>
+
+<section id="contact" class="section">
+  <h2>Hours &amp; contact</h2>
+  <div class="two">
+    <div>
+      <h3>Opening hours</h3>
+      <ul class="hours">
+        <li><span>Tue–Thu</span><span>9:00 – 19:00</span></li>
+        <li><span>Fri</span><span>9:00 – 20:00</span></li>
+        <li><span>Sat</span><span>8:00 – 16:00</span></li>
+        <li><span>Sun–Mon</span><span>Closed</span></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Find us</h3>
+      <p>42 Main Street, Suite 2<br>Springfield, USA</p>
+      <p><a href="tel:+15550101000">(555) 010-1000</a><br>
+      <a href="mailto:hello@fadeandblade.example">hello@fadeandblade.example</a></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p>© <span id="year">2026</span> Fade &amp; Blade Barbershop — a fictional demonstration.</p>
+  <p class="demo-note"><strong>Demo notice:</strong> fictional business site built and published by JARVIS WEB MASTER AI as an exercise. It is not an official business website; nothing here can be booked, bought or contacted for real.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
